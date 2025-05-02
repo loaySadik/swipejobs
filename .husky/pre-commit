@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔍 Validating branch name..."
+node .husky/branch-name-validator.js || exit 1
+
+echo "🔍 Checking code quality with linting..."
+pnpm run lint
+
+echo "🧪 Type checking..."
+pnpm run type-check
+
+echo "✅ Running tests..."
+pnpm test

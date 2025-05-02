@@ -1,0 +1,57 @@
+{
+    "jobs": {
+        "basicJob": {
+            "jobId": "2",
+            "company": "Test Co",
+            "location": {
+                "address": "456 Other Ave",
+                "distance": "3 miles"
+            },
+            "wagePerHourInCents": 1200,
+            "milesToTravel": 3,
+            "shifts": [],
+            "requirements": []
+        },
+        "jobMatch": {
+            "jobId": "123",
+            "jobTitle": {
+                "name": "Software Developer",
+                "imageUrl": "http://example.com/image.jpg"
+            },
+            "company": {
+                "name": "Tech Company",
+                "address": {
+                    "formattedAddress": "123 Tech St, San Francisco, CA",
+                    "zoneId": "America/Los_Angeles"
+                },
+                "reportTo": {
+                    "name": "John Manager",
+                    "phone": "555-123-4567"
+                }
+            },
+            "wagePerHourInCents": 2500,
+            "milesToTravel": 5.3,
+            "shifts": [
+                {
+                    "startDate": "2025-05-15T09:00:00Z",
+                    "endDate": "2025-05-15T17:00:00Z"
+                }
+            ],
+            "branch": "Main",
+            "branchPhoneNumber": "555-987-6543",
+            "requirements": [
+                "Laptop",
+                "Experience with React"
+            ]
+        }
+    },
+    "dates": {
+        "isoDate": "2025-05-15T10:00:00Z",
+        "shiftStart": "2025-05-15T09:00:00Z",
+        "shiftEnd": "2025-05-15T17:00:00Z"
+    },
+    "currency": {
+        "standard": 1250,
+        "wage": 1850
+    }
+}
