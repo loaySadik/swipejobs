@@ -23,4 +23,5 @@ export interface ApiResponse<T> {
 export interface JobActionResponse {
     success: boolean;
     message?: string;
+    errorCode?: string;
 } 
