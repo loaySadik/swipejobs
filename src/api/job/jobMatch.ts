@@ -12,7 +12,6 @@ export const useWorkerMatchesQuery = () => useQuery({
     queryFn: async () => {
         try {
             const response = await apiClient.get<Job[]>(`/worker/${DEFAULT_WORKER_ID}/matches`);
-            console.log('API Response:', JSON.stringify(response.data, null, 2));
 
             // Map the response data to our unified Job type
             return response.data.map((jobData) => mapResponseToJob(jobData));
