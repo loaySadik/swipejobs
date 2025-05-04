@@ -12,7 +12,6 @@
  */
 
 import { execSync } from 'child_process';
-
 // Get the current branch name
 const branchName = execSync('git rev-parse --abbrev-ref HEAD')
   .toString()
