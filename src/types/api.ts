@@ -12,8 +12,6 @@ export interface WorkerProfile {
     workerId: string;
 }
 
-// Import Job interface instead of redefining similar interface
-
 // API Response interfaces
 export interface ApiResponse<T> {
     data: T;
